@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eac498;
+    color: #383809;    
+}
+
+/* Header Styles */
+header {
+    background-color: #980b31;
+    padding: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/hero-img.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+/* #f57f17 */
+
+.cta-button {
+    background-color: #980b31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.region-cards,
+.herb-list,
+.recipe-cards,
+.shop-items,
+.blog-posts,
+.snack-cards,
+.beverage-cards,
+.religious-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.region-card,
+.herb-item,
+.shop-item,
+.snack-card,
+.beverage-card,
+.religious-card {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.region-card:hover, .herb-item:hover, .snack-card:hover, .beverage-card:hover, .religious-card:hover {
+    transform: scale(1.05);
+}
+.region-img, .religious-img {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #f57f17;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
